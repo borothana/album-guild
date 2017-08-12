@@ -2,49 +2,68 @@
 <html lang="en">
 <head>
     <title>BLACKPINK</title>
+    <meta charset="utf-8" />
+    <link href="stylesheet/albumstyle.css" type="text/css" rel="stylesheet" />
+    <link href="stylesheet/restaurantStyles.css" type="text/css" rel="stylesheet" />
     <style>
         table {
+            width: 100%;
             border-collapse: collapse;
         }
 
-            table th {
-                background-color: silver;
-                border: solid;
-                border-width: 1px;
-            }
+        table th {
+            background-color: silver;
+            border: solid;
+            border-width: 1px;
+        }
 
-            table td {
-                border: solid;
-                border-width: 1px;
-            }
+        table td {
+            border: solid;
+            border-width: 1px;
+        }
 
-        .albumheader {
-            text-align: center;
-            width: 50%;
+        .bandfont {
+            font-family: Forte;
+        }
+
+        #divImg {
+            background-image: url('images/blackpink_square_two.jpg');
+            width: 250px;
+            height: 250px;
+            position: center;
+            background-size: 100%;
             margin: auto;
         }
+
+        li{
+            font-style:italic;
+        }
+        
+        .headerfont {
+            font-family: Forte;
+        }
     </style>
-    <link href="stylesheet/album_style.css" type="text/css" rel="stylesheet" />
+    
 </head>
 <body>
     <div id="albumheader" class="albumheader">
-        <img src="images/blackpink_square_two.jpg" alt="BLACKPINK Square Two album.jpg" style="width:250px" />
-        <h1>SQUARE TWO</h1>
+        <div id="divImg"></div>
+        <h1 id="albumname" class="headerfont">SQUARE TWO</h1>
         <h2><a href="https://en.wikipedia.org/wiki/Black_Pink">BLACKPINK</a></h2>
         <h3>November 1, 2016</h3>
         <hr />
         <div id="bandmember" style="text-align:center">
-            <p>Band Members and Producers</p>
+            <p id="band" class="bandfont">Band Members and Producers</p>
             <div style="text-align:left">
                 <ul style="list-style-type:disc">
                     <li>Kim Ji-soo - Lead Vocals</li>
                     <li>Jennie Kim - Vocals</li>
                     <li>Lisa Manoban - Lead Rapper</li>
-                    <li>Park Chae Young (Rosé)- Vocals</li>
+                    <li>Park Chae Young (Rose)- Vocals</li>
                     <li>Producers - Teddy Park</li>
                 </ul>
             </div>
-            <table id="track" style="width:100%">
+            <table id="track">
                 <caption>Tracks</caption>
                 <thead>
                     <tr>
