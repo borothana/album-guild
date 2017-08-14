@@ -1,14 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>BLACKPINK</title>
     <meta charset="utf-8" />
     <link href="stylesheet/albumstyle.css" type="text/css" rel="stylesheet" />
-    <link href="stylesheet/restaurantStyles.css" type="text/css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style>
         table {
-            width: 100%;
             border-collapse: collapse;
+            border:solid;
+            border-width:1px;
         }
 
         table th {
@@ -17,25 +25,16 @@
             border-width: 1px;
         }
 
-        table td {
-            border: solid;
-            border-width: 1px;
-            font-style:italic;
-            background-color:whitesmoke;
-        }
+            table td {
+                font-style: italic;
+                border: solid;
+                border-width: 1px;
+            }
 
         .bandfont {
             font-family: Forte;
         }
 
-        #divImg {
-            background-image: url('images/blackpink_square_two.jpg');
-            width: 250px;
-            height: 250px;
-            position: center;
-            background-size: 100%;
-            margin: auto;
-        }
 
         li{
             font-style:italic;
@@ -51,49 +50,64 @@
             text-decoration:underline;
             background-color:silver;
         }
+            
+        /* For small screen 
+        .row :nth-child(even) {
+            background-color: #dcdcdc;
+        }
+
+        .row :nth-child(odd) {
+            background-color: #aaaaaa;
+        }
+        */
+        
     </style>
     
 </head>
 <body>
-    <div id="albumheader" class="albumheader">
-        <div id="divImg"></div>
-        <h1 id="albumname" class="headerfont">SQUARE TWO</h1>
-        <h2><a href="https://en.wikipedia.org/wiki/Black_Pink">BLACKPINK</a></h2>
-        <h3>November 1, 2016</h3>
-        <hr />
-        <div id="bandmember" style="text-align:center">
-            <p id="band" class="bandfont">Band Members and Producers</p>
-            <div style="text-align:left">
-                <ul style="list-style-type:disc">
-                    <li>Kim Ji-soo - Lead Vocals</li>
-                    <li>Jennie Kim - Vocals</li>
-                    <li>Lisa Manoban - Lead Rapper</li>
-                    <li>Park Chae Young (Rose)- Vocals</li>
-                    <li>Producers - Teddy Park</li>
-                </ul>
+    <div class="container">
+        <div id="albumheader" class="albumheader">
+            <img id="imgBandLogo" src="images/blackpink_square_two.jpg" class="img-circle" alt="black pink logo" />
+            <h1 id="albumname" class="headerfont">SQUARE TWO</h1>
+            <h2><a href="https://en.wikipedia.org/wiki/Black_Pink">BLACKPINK</a></h2>
+            <h3>November 1, 2016</h3>
+            <hr />
+            <div id="bandmember" style="text-align:center">
+                <p id="band" class="bandfont">Band Members and Producers</p>
+                <div style="text-align:left">
+                    <ul style="list-style-type:disc">
+                        <li>Kim Ji-soo - Lead Vocals</li>
+                        <li>Jennie Kim - Vocals</li>
+                        <li>Lisa Manoban - Lead Rapper</li>
+                        <li>Park Chae Young (Rose)- Vocals</li>
+                        <li>Producers - Teddy Park</li>
+                    </ul>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <caption>Tracks</caption>
+                        <thead>
+                            <tr>
+                                <th>Track #</th>
+                                <th>Track Title</th>
+                                <th>Track Lenght</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="warning">
+                                <td>1</td>
+                                <td>Playing with Fire</td>
+                                <td>3:17</td>
+                            </tr>
+                            <tr class="active">
+                                <td>2</td>
+                                <td>Stay</td>
+                                <td>3:50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <table id="track">
-                <caption>Tracks</caption>
-                <thead>
-                    <tr>
-                        <th width="10%">Track #</th>
-                        <th width="30%">Track Title</th>
-                        <th width="60%">Track Lenght</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Playing with Fire</td>
-                        <td>3:17</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Stay</td>
-                        <td>3:50</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </div>
 </body>
